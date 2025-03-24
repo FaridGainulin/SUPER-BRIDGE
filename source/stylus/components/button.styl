@@ -1,0 +1,69 @@
+.btn
+  height: 45px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: #fff
+  border-radius: 15px
+  box-shadow: inset 4px 4px 25px 0 rgba(255, 255, 255, 0.45);
+  background: linear-gradient(90deg, #334e9c 0%, #5588c7 100%);
+  text-transform: uppercase
+  font-family: 'Gilroy-Semibold'
+  font-weight: 600
+  font-size: 14px
+  line-height: 110%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    font-size: 16px;
+    height: 50px;
+  +above($breakpoints.md)
+    font-size: 18px;
+    height: 60px;
+  +above($breakpoints.xxl)
+    font-size: 20px;
+    height: 70px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--call-me
+    font-size: 10px
+    height: 28px
+    width 120px
+    +above($breakpoints.sm)
+      font-size: 12px;
+      height: 38px;
+      width 160px
+    +above($breakpoints.md)
+      font-size: 14px;
+      height: 42px;
+      width 180px
+    +above($breakpoints.xxl)
+      font-size: 16px;
+      height: 48px
+      width 207px

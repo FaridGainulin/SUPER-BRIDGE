@@ -1,0 +1,77 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="583" height="467" alt="image")
+      h2.about-section__title.font-w-a-bold.font-s-42.text-up
+        | Знаем, как легко начать бизнес в этой нише
+      .about-section__sub-title
+        .font-w-semi-bold.font-s-24 И научим этому вас!
+      .swiper-bullet
+        .about-section__cards.swiper-wrapper
+          .about-section__card.swiper-slide.about-section__card-1
+            .font-s-18
+              span.font-w-semi-bold.color-blue-32 Мы ведем успешную работу 
+              br.no-br
+              span.font-w-semi-bold.color-blue-32 бизнеса уже с 2012 года 
+              | и 
+              br.no-br
+              | запустили свои точки в 6-ти 
+              br.no-br
+              | городах России, поэтому 
+              br.no-br
+              | уверены в эффективности 
+              br.no-br
+              | нашей бизнес-модели
+          .about-section__card.swiper-slide.about-section__card--secondary.about-section__card-2
+            .font-s-18
+              span.font-w-semi-bold.color-blue-32 Став нашим партнером, вы 
+              br.no-br
+              | получите уникальную 
+              br.no-br
+              | возможность стать частью 
+              br.no-br
+              | растущей сети с уже 
+              br.no-br
+              | известным брендом и легко 
+              br.no-br
+              | запустить свой сервис
+          .about-section__card.swiper-slide
+            .font-s-18
+              span.font-w-semi-bold.color-blue-32 Работаем с широкой ЦА, 
+              | что 
+              br.no-br
+              | позволяет нам развивать 
+              br.no-br
+              | бизнес в разных категориях и 
+              br.no-br
+              | всегда быть обеспеченными 
+              br.no-br
+              | клиентами и прибылью
+          .about-section__card.swiper-slide.about-section__card--secondary.about-section__card-4
+            .font-s-18
+              span.font-w-semi-bold.color-blue-32
+                | Вы сможете самостоятельно 
+                br.no-br
+                | выбрать удобный формат 
+              br.no-br
+              | ведения бизнеса и быстро 
+              br.no-br
+              | выйти на чистую прибыль, 
+              br.no-br
+              | работая в команде с 
+              br.no-br
+              | профессионалами
+        .bullet-pagination
+      img.about-section__icon(src="images/about-section-icon.svg" loading="lazy" width="30" height="23" alt="icon")
+      .about-section__bottom
+        .about-section__bottom-text.font-s-20-b Хотите узнать о нас больше?
+        .about-section__bottom-title.font-w-a-bold.font-s-32.text-up
+          span.color-blue-32 Задайте 
+          | любой вопрос о работе франшизы
+        form.about-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+          .about-section__form-column
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") ЗАДАТЬ ВОПРОС ОСНОВАТЕЛЯМ
